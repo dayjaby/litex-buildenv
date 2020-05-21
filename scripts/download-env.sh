@@ -466,7 +466,7 @@ fi
 
 # FIXME: Remove this once @jimmo has finished his new firmware
 # MimasV2Config
-if [ "$PLATFORM" = "mimasv2" ]; then
+if [ "$PLATFORM" = "mimasv2" -o "$PLATFORM" = "mimas" ]; then
 	echo
 	echo "Installing MimasV2Config (mimasv2 flashing tool)"
         pip install 'git+https://github.com/numato/samplecode/#egg=MimasV2&subdirectory=FPGA/MimasV2/tools/configuration/python/' 
